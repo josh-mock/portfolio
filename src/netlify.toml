@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://adorable-pixie-c96046.netlify.app/*"
+  to = "https://josh-mock.com/:splat"
+  status = 301
+  force = true
