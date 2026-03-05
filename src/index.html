@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Mock</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+      integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+      integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css"
+      integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="/#main-content">Skip to main content</a>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__title-wrapper">
+          <h1 class="header__title">Josh Mock</h1>
+          <hr class="header__divider" />
+          <span class="header__subtitle"> Full-stack web developer </span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="header__nav">
+          <a href="/#skills">Skills</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#contact">Contact</a>
+          <a
+            href="https://www.github.com/josh-mock"
+            aria-label="View Josh Mock's GitHub"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+          </a>
+          <button
+            class="header__theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i aria-hidden="true" class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="header__menu-toggle"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Mobile Nav -->
+        <nav class="header__mobile-nav" id="mobileNav">
+          <a href="/#skills">Skills</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#contact">Contact</a>
+          <a
+            href="https://www.github.com/josh-mock"
+            aria-label="View Josh Mock's GitHub"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+          </a>
+          <button
+            class="header__theme-toggle"
+            id="themeToggleMobile"
+            aria-label="Toggle dark mode"
+          >
+            <i aria-hidden="true" class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main id="main-content">
+      <!-- ===== HERO ===== -->
+      <section class="section container" id="hero">
+        <div class="hero__wrapper">
+          <img
+            src="assets/avatar.png"
+            alt="Portrait of Josh Mock"
+            class="hero__img"
+          />
+
+          <div class="hero__content">
+            <h2 class="hero__heading">Hi, I'm Josh</h2>
+
+            <p class="hero__paragraph">
+              I came to web development through an unusual route — years spent
+              doing open-source investigations taught me to think carefully
+              skills data, tools, and how to find what's hidden.
+            </p>
+
+            <p class="hero__paragraph">
+              When I started teaching myself Python to make that work easier, I
+              realised I loved building things just as much as investigating
+              them.
+            </p>
+
+            <p class="hero__paragraph">
+              These days I build full-stack web apps — mostly tools that make
+              complicated data easier to work with. Everything I know, I've
+              built up by doing.
+            </p>
+
+            <a class="hero__cta" href="/#contact"> Get in touch </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+      <section class="section section--skills container" id="skills">
+        <h2>Skills</h2>
+
+        <p>These are the tools I regularly turn to in my projects.</p>
+
+        <dl class="skills__tech-list">
+          <div class="skills__tech-group">
+            <dt>Frontend</dt>
+            <dd>
+              HTML5, CSS3 (vanilla, Tailwind), JavaScript / TypeScript, React,
+              Next.js, Figma
+            </dd>
+          </div>
+
+          <div class="skills__tech-group">
+            <dt>Backend</dt>
+            <dd>
+              Node.js / Express, Python, REST APIs, Authentication (JWT, OAuth)
+            </dd>
+          </div>
+
+          <div class="skills__tech-group">
+            <dt>Data</dt>
+            <dd>SQL (Postgres, SQLite), MongoDB, GraphQL</dd>
+          </div>
+
+          <div class="skills__tech-group">
+            <dt>Tooling & Deployment</dt>
+            <dd>Git / GitHub, Testing, Vercel / Netlify, Docker</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section class="section container" id="projects">
+        <h2>Projects</h2>
+
+        <p>
+          Here are some of the things I've been working on lately. Visit my
+          <a href="https://www.github.com/josh-mock">GitHub</a> for my full
+          portfolio.
+        </p>
+
+        <div class="projects__grid">
+          <div class="project">
+            <img
+              class="project__img"
+              src="/assets/hero.png"
+              alt="Portfolio site demo"
+            />
+
+            <h3 class="project__title">
+              Portfolio site
+              <a href="" aria-label="View on GitHub">
+                <i aria-hidden="true" class="fa-brands fa-github"></i>
+              </a>
+            </h3>
+
+            <p class="project__tagline">Showcasing what I've worked on</p>
+
+            <ul class="project__techstack">
+              <li class="project__tech-pill">HTML5</li>
+              <li class="project__tech-pill">CSS3</li>
+              <li class="project__tech-pill">JavaScript</li>
+            </ul>
+
+            <dl class="project__details">
+              <dt class="project__question">Problem:</dt>
+              <dd class="project__answer">
+                Needed a portfolio that's simple to update and deploy.
+              </dd>
+
+              <dt class="project__question">Solution:</dt>
+              <dd class="project__answer">
+                A lightweight vanilla frontend site.
+              </dd>
+
+              <dt class="project__question">Result:</dt>
+              <dd class="project__answer">
+                Showcases my skills in HTML, CSS, and JavaScript.
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section container" id="contact">
+        <div class="form__wrapper">
+          <h2>Contact</h2>
+
+          <p>Fill out the form below and I'll get back to you shortly!</p>
+
+          <form
+            class="form"
+            data-netlify="true"
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            action="/thank-you"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p hidden>
+              <label>Don't fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form__group">
+              <label class="form__label" for="name"> Full Name </label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="company">
+                Company Name (optional)
+              </label>
+              <input
+                class="form__input"
+                type="text"
+                id="company"
+                name="company"
+              />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email"> Email </label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="phone"> Phone (optional) </label>
+              <input class="form__input" type="tel" id="phone" name="phone" />
+            </div>
+
+            <button class="form__button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer section">
+      <span>&#169;</span>
+      <span id="copyright-year"></span>
+      Josh Mock
+    </footer>
+  </body>
+</html>

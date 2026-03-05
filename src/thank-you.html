@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Mock</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+      integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+      integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css"
+      integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="/#main-content">Skip to main content</a>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__title-wrapper">
+          <h1 class="header__title">Josh Mock</h1>
+          <hr class="header__divider" />
+          <span class="header__subtitle"> Full-stack web developer </span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="header__nav">
+          <a href="/">Home</a>
+          <a
+            href="https://www.github.com/josh-mock"
+            aria-label="View Josh Mock's GitHub"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+          </a>
+          <button
+            class="header__theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i aria-hidden="true" class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="header__menu-toggle"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Mobile Nav -->
+        <nav class="header__mobile-nav" id="mobileNav">
+          <a href="/">Home</a>
+          <a
+            href="https://www.github.com/josh-mock"
+            aria-label="View Josh Mock's GitHub"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+          </a>
+          <button
+            class="header__theme-toggle"
+            id="themeToggleMobile"
+            aria-label="Toggle dark mode"
+          >
+            <i aria-hidden="true" class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="section container">
+      <h1 class="thank-you__title">Thank you!</h1>
+      <p class="thank-you__copy">
+        Your message has been sent. I'll get back to you soon.
+      </p>
+      <a class="thank-you__copy" href="/">Back to homepage</a>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer section">
+      <span>&#169;</span>
+      <span id="copyright-year"></span>
+      Josh Mock
+    </footer>
+  </body>
+</html>
